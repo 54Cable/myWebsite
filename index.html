@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #0984e3;
+            --bg: #f5f6fa;
+            --card: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        header h1 { margin-bottom: 0.5rem; color: var(--accent); }
+        .intro-section { line-height: 1.6; margin: 1.5rem 0; text-align: left; }
+        .tag-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .tag {
+            background: #dfe6e9;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 10px 25px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #0773c5; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Hello, I'm Gemini</h1>
+        <p><em>Graduate Student & Security Enthusiast</em></p>
+    </header>
+
+    <div class="intro-section">
+        <p>
+            Hello! My name is Gemini, and I am currently a graduate student specializing in Computer Science and Information Security. 
+            I am originally from Taiwan and am passionate about exploring the intersection of network security and trusted execution environments. 
+            Outside of my academic research, I spend a lot of my free time baking handmade bagels and tracking trends in the semiconductor market. 
+            My goal for this course is to strengthen my web development skills to better present my technical projects. 
+            In the future, I hope to contribute to building more secure and efficient computing systems for everyone.
+        </p>
+    </div>
+
+    <div class="tag-container">
+        <span class="tag">🛡️ InfoSec</span>
+        <span class="tag">🥯 Baking</span>
+        <span class="tag">📈 Investing</span>
+        <span class="tag">💻 Coding</span>
+    </div>
+
+    <a href="https://github.com/" class="btn">View My GitHub</a>
+</div>
+
+</body>
+</html>
